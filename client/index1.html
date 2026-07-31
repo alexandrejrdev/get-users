@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Users</title>
+
+</head>
+
+<body>
+
+    <span></span>
+    <button>Clique Aqui</button>
+
+    <button class="decrementar">DECREMENTAR</button>
+    <button class="zerar">ZERAR</button>
+    <button class="incrementar">INCREMENTAR</button>
+
+    <script>
+
+        //document.body.style.background = '#000';
+
+
+        const btnDecrementar = document.querySelector('.decrementar');
+        const btnZerar = document.querySelector('.zerar');
+        const btnIncrementar = document.querySelector('.incrementar');
+
+        const span = document.querySelector('span');
+        const btnClick = document.querySelector('button');
+
+        let count = 0;
+        span.textContent = count;
+
+
+        btnIncrementar.addEventListener('click', () => {
+
+            count++;
+            span.textContent = count;
+
+        });
+
+        btnDecrementar.addEventListener('click', () => {
+
+            count--;
+            span.textContent = count;
+
+        });
+
+        btnZerar.addEventListener('click', () => {
+
+            count = 0;
+            span.textContent = count;
+
+        });
+
+        btnClick.addEventListener('click', () => {
+
+            count ++;
+            span.textContent = count;
+
+        });
+
+
+
+      /*   function greet() {
+            console.log('Hello!');
+        } */
+
+    </script>
+
+</body>
+
+</html>
