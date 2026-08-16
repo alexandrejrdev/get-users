@@ -1,6 +1,8 @@
 const email = document.querySelector('input[type="email"]');
 const password = document.querySelector('input[type="password"]');
 const button = document.querySelector('button');
+const checkbox = document.querySelector('input[type="checkbox"]');
+const LabelPassowrd = document.querySelector('#Label-passowrd');
 
 // dado mocado ( ficticio para verificação )
 /* const user = {
@@ -32,5 +34,18 @@ button.addEventListener('click', (event) => {
 
 });
 
+checkbox.addEventListener('change', () => {
+    const attributeValue = password.getAttribute('type');
+
+    if (attributeValue === 'password') {
+        password.setAttribute('type', 'text');
+        LabelPassowrd.textContent = 'Ocultar Senha';
+        return;
+    }
+
+    password.setAttribute('type', 'password');
+    LabelPassowrd.textContent = 'Mostar Senha';
+
+})
 
 
