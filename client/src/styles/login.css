@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* para retirar as margens da pagina*/
+    padding: 0; /* para retirar as margens da pagina*/
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(to bottom right, rgb(251, 251, 251), rgb(64, 112, 166), rgb(13, 50, 145));
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20, 73, 129, 0.419);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+form div label {
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+}
+
+form .email {
+    display: flex;
+    flex-direction: column;
+}
+
+form .email input {
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    padding: 5px;
+    margin-top: 4px;
+} 
+
+form .senha {
+    display: flex;
+    flex-direction: column;
+} 
+
+form .senha input {
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+form div .mostrarsenha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* form .mostrarsenha input {
+    border-style: none;
+}
+ */
+#Label-passowrd {
+    font-size: smaller;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: silver;
+    position: relative;
+    top: 2px;
+    transition: all;
+}
+
+body main form .links p {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    gap: 4px;
+    color: silver;
+    font-weight: 200;
+}
+
+body main form .links a {
+    color: white;
+    text-decoration: none;
+}
+
+body main form .links a:hover {
+    color: black;
+    cursor: pointer;
+    transition: all;
+    text-decoration: none;
+}
