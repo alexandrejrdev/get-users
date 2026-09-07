@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Alex01/get-users/client/src/styles/recovery.css">
     <title>Recuperar</title>
 </head>
 
@@ -10,16 +11,26 @@
     <main>
         <form>
             <h1>Recuperar</h1>
-            <label>Email *</label>
-            <input type="email">
-            <label>Nova Senha *</label>
-            <input type="password" id="new-password">
-            <label>Confirmar Nova Senha *</label>
-            <input type="password" id="confirm-new-password">
-            <input type="checkbox">
-            <label id="Label-passowrd">Mostrar Senha</label>
+            <div class="email">
+                <label>Email *</label>
+                <input type="email">
+            </div>
+            <div class="senha">
+                <label>Nova Senha *</label>
+                <input type="password" id="new-password">
+            </div>
+            <div class="confirmsenha">
+                <label>Confirmar Nova Senha *</label>
+                <input type="password" id="confirm-new-password">
+            </div>
+            <div class="mostrarsenha">
+                <input type="checkbox">
+                <label id="Label-passowrd">Mostrar Senha</label>
+            </div>
             <button>Recuperar</button>
-            <p>Não possui cadastro? Registre-se <a href="register.html">aqui</a>.</p>
+            <div class="links">
+                <p>Não possui cadastro? Registre-se <a href="register.html">aqui</a>.</p>
+            </div>
         </form>
     </main>
     <script src="../scripts/recovery.js"></script>
